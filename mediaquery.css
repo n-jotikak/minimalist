@@ -1,0 +1,78 @@
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+
+  .products-card-wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blanchedalmond;
+  }
+  header {
+    display: none;
+  }
+  section#sidenav {
+    left: 0;
+  }
+  main {
+    transition: all 500ms;
+    margin-left: 250px;
+  }
+
+  .products-card-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .product-container{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-detail{
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .review-wrapper{
+    grid-column: 1/ span 2;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  body {
+    background-color: beige;
+  }
+
+  .products-card-wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: burlywood;
+  }
+
+  .products-card-wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+  }
+
+  .subscribe{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .subscribe-form{
+    align-items: center;
+  }
+}

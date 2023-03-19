@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --orange: #FFC93C;
+  --light: #ECECEC;
+  --dark: #0A2647;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F5EB;
+}
+
+input, select, button {
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  background: none;
+  border: none;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+ion-icon {
+  color: #0A2647;
+  font-size: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0A2647;
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.color {
+  color: var(--orange);
+}
+
+.btn {
+  background-color: #FFC93C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-weight: 800;
+  box-shadow: 0 0 5px #0A2647;
+}
+
+
+.price {
+  border-top: 5px solid #FFC93C;
+  width: fit-content;
+  padding-top: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.price-lg {
+  font-size: 32px;
+}
+
+.overlay {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.logo {
+
+  display: flex;
+  align-items: center;
+
+}
+
+.logo img {
+  width: 96px;
+  height: 96px;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  text-shadow: 0 0 10px var(--dark);
+}
+
+.menu ion-icon {
+  color: var(--orange);
+}
+
+header {
+  padding: .5rem 1rem;
+  background-color: rgba(236, 236, 236, 0.75);
+  box-shadow: 0 0 10px #0A2647;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidenav {
+  background-color: #F5F5F5;
+  height: 100vh;
+  width: 250px;
+  padding: 2.5rem 0;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  z-index: 1000;
+  transition: all 500ms;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section:target {
+  left: 0;
+}
+
+.sidenav .logo {
+  flex-direction: column;
+}
+
+.sidenav nav {
+  padding: 2rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.sidenav .icons-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sidenav nav a {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.sidenav nav a:hover,
+.sidenav .icons-group ion-icon:hover {
+  color: #FFC93C;
+}
+

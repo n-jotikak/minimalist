@@ -1,0 +1,172 @@
+/* Home Page */
+
+.card{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+
+.card:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:var(--light);
+    transition: all 500ms;
+}
+
+.card .overlay{
+    transition: all 500ms;
+}
+
+.products-card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.subscribe-form{
+    /* display: flex; */
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+}
+
+.subscribe-form input{
+    background-color: lightslategray;
+}
+
+.subscribe{
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 25px;
+    text-align: center;
+    display: grid;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+
+/* Shop Page */
+
+
+/* Product Page */
+
+
+
+.product-preview{
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr );
+    grid-template-rows: 450px 100px;
+    gap: 15px;
+
+}
+
+
+.product-preview img:nth-child(1){
+    grid-column: 1/ span 3;
+    grid-row: 450px;
+    /* grid-column: 1 / -1; */
+
+}
+
+.product-preview img{
+    box-shadow: 0 0 10px var(--dark);
+
+    border-radius: 15px;
+    transition: all 250ms;
+}
+
+.product-preview img:hover{
+    transform: translateY(-10px);
+    /* transform: scale(1.03); */
+}
+
+
+.product-detail{
+    padding: 15px 25px;
+    display: grid;
+    gap: 15px;
+    /* grid-template-rows: auto 500px auto; */
+    gap: 15px;
+}
+
+
+/* product-review */
+
+
+.product-review img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    grid-row: 1/3;
+}
+
+
+.stars ion-icon{
+    font-size: 20px;
+}
+
+.product-review{
+    display: 10px;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.review-wrapper{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.product-container{
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+
+.something img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+} 
+
+.something{
+    padding: 15px;
+    display: flex;
+}
+
+/* .something img:nth-child(2),
+.something img:nth-child(4){
+    margin-left: -20px;
+} */
+
+.something img:not(:nth-child(1)){
+    margin-left: -25px;
+}
+
+.something img:nth-child(odd){
+    z-index: 99;
+}
+
+.something img:nth-child(3){
+    transform: scale(1.2);
+    box-shadow: 0 0 10px black;
+}
